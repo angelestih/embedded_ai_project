@@ -1,27 +1,5 @@
 #include <Arduino_OV767X.h>
-
-/*
-  Object classifier by color
-  --------------------------
-
-  Uses RGB color sensor input to Neural Network to classify objects
-  Outputs object class to serial using unicode emojis
-
-  Note: The direct use of C/C++ pointers, namespaces, and dynamic memory is generally
-        discouraged in Arduino examples, and in the future the TensorFlowLite library
-        might change to make the sketch simpler.
-
-  Hardware: Arduino Nano 33 BLE Sense board.
-
-  Created by Don Coleman, Sandeep Mistry
-  Adapted by Dominic Pajak
-
-  This example code is in the public domain.
-*/
-
-// Arduino_TensorFlowLite - Version: 0.alpha.precompiled
 #include <TensorFlowLite.h>
-
 #include <tensorflow/lite/micro/all_ops_resolver.h>
 #include <tensorflow/lite/micro/micro_error_reporter.h>
 #include <tensorflow/lite/micro/micro_interpreter.h>
